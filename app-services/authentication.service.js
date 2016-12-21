@@ -22,8 +22,8 @@
 				// password: password,
 			})
 			.success(function (response){
-				// responseData = true;
-				callback(response);
+				/* responseData = true;*/
+                callback(response);
 			})
 			.error(function (response){
 				callback(response);

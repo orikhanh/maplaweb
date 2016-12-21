@@ -13,12 +13,16 @@
 				templateUrl : "home/home.view.html",
 				controllerAs : 'vm',
 			})
-			.when('/login',{
+			.when('/asdasd',{
 				controller : "LoginController",
 				templateUrl : "login/login.view.html",
 				controllerAs : 'vm',
 			})
-			.otherwise({ redirectTo: '/login' });
-	}
+			.otherwise({ redirectTo: '/asdasd' });
+        $locationProvider
+			.html5Mode({
+                enabled: true,
+            })
+    }
 
 })(window.angular);
