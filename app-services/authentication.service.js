@@ -11,26 +11,37 @@
 		var service = {};
 
 		service.login = login;
+		service.register = register;
 
 		return service;
 
 		function login(username, password, callback) {
-			var responseData = false;
 			var url = 'http://localhost:9000/users/'+username+'/'+password;
 			$http.get( url, {
 				// username: username,
 				// password: password,
 			})
 			.success(function (response){
-				/* responseData = true;*/
                 callback(response);
 			})
 			.error(function (response){
 				callback(response);
 			})
-
-			// return responseData.promise;
 		}
+
+		function register(username, password, callback) {
+            var url = 'http://localhost:9000/users/'+username+'/'+password;
+            $http.post( url, {
+                // username: username,
+                // password: password,
+            })
+            .success(function (response){
+                callback(response);
+            })
+            .error(function (response){
+                callback(response);
+            })
+        }
 	}
 
 })(window.angular);
