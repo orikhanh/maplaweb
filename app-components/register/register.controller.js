@@ -3,7 +3,7 @@
     
     angular
         .module('mapla-login')
-        .controller('RegisterController', MyRegisterController)
+        .controller('RegisterController', MyRegisterController);
 
     MyRegisterController.$inject = ['AuthenticationService','$location'];
     function MyRegisterController(AuthenticationService, $location) {

@@ -12,32 +12,19 @@
 		vm.login = login;
 
 		function login(){
-			// var response = AuthenticationService.login(vm.username, vm.password);
-			
-			// response.then(
-			// 	function (response){
-			// 		redirectAfterSubmit(response);
-			// 	}
-			// 	// redirectAfterSubmit(response);
-			// );
+
+			AuthenticationService.clearCredential();
+
 			AuthenticationService.login(vm.username, vm.password, function(response){
 				if(response.result){
+					AuthenticationService.setCredential(vm.username, vm.password);
 					$location.path('/');
 				} else if(response.error){
 					alert('wrong username or password');
 				}
 			})
-			
 		};
 
-		// function redirectAfterSubmit(response){
-		// 	if (response){
-		// 		$location.path('/');
-		// 	}
-		// 	else {
-		// 		alert('wrong username or password');
-		// 	}
-		// }
 	};
 
 })(window.angular);

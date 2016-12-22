@@ -5,14 +5,15 @@
 		.module('mapla-login')
 		.controller('HomeController', HomeController)
 
-	HomeController.$inject = [];
-	function HomeController(){
+	HomeController.$inject = ['AuthenticationService', '$location'];
+	function HomeController(AuthenticationService, $location){
 		var vm = this
 
-		vm.show = show;
+		vm.logout = logout;
 
-		function show(){
-			alert('1123');
+		function logout(){
+            AuthenticationService.clearCredential();
+            $location.path('/login');
 		}
 	}
 	
