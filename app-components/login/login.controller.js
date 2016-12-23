@@ -21,6 +21,8 @@
 					$location.path('/');
 				} else if(response.error){
 					alert('wrong username or password');
+				} else {
+                    alert('something happen??');
 				}
 			})
 		};
