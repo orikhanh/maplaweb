@@ -54,7 +54,7 @@
             };
 
             // set default auth header for http requests
-            $http.defaults.headers.common['Authorization'] = 'Basic ' + password;
+            // $http.defaults.headers.common['Authorization'] = 'Basic ' + password;
 
             // store user details in globals cookie that keeps user logged in for 1 week (or until they logout)
             var cookieExp = new Date();
@@ -65,7 +65,7 @@
         function clearCredential(){
             $rootScope.globals = {};
             $cookies.remove('globals');
-            $http.defaults.headers.common.Authorization = 'Basic';
+            // $http.defaults.headers.common.Authorization = 'Basic';
         }
 	}
 

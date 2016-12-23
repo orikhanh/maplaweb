@@ -17,7 +17,7 @@
 
 			AuthenticationService.login(vm.username, vm.password, function(response){
 				if(response.userEmail){
-					AuthenticationService.setCredential(vm.username, vm.password);
+					AuthenticationService.setCredential(response.userEmail, response.password);
 					$location.path('/');
 				} else if(response.error){
 					alert('wrong username or password');
