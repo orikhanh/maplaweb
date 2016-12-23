@@ -16,7 +16,7 @@
 			AuthenticationService.clearCredential();
 
 			AuthenticationService.login(vm.username, vm.password, function(response){
-				if(response.result){
+				if(response){
 					AuthenticationService.setCredential(vm.username, vm.password);
 					$location.path('/');
 				} else if(response.error){

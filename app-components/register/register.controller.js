@@ -13,7 +13,7 @@
 
         function register(){
             AuthenticationService.register(vm.reg.username, vm.reg.password, function(response){
-                if(response.result){
+                if(response){
                     //auto login and redirect home
                     $location.path('/');
                 } else {
