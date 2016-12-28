@@ -26,9 +26,11 @@
             })
 			.otherwise({ redirectTo: '/login' });
         $locationProvider
-			.html5Mode({
-                enabled: true
+            .html5Mode({
+                enabled: true,
+                // requireBase: false
             })
+            .hashPrefix('#')
     }
 
     //config 'on run' to get data from cookies and redirect

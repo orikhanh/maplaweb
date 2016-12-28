@@ -1,0 +1,23 @@
+{
+  "name": "maplaweb",
+  "description": "lib injecttor",
+  "main": "app.js",
+  "authors": [
+    "dinh ngoc duong <duong.dinh@axonactive.vn>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/orikhanh/maplaweb",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.1.1",
+    "angular": "1.4.3",
+    "angular-route": "1.4.3",
+    "angular-cookies": "1.4.3"
+  }
+}

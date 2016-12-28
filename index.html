@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html ng-app="mapla-login">
 <head>
-	<base href="/maplaweb/">
+	<base href="/">
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Mapla Project</title>
-	<link rel="stylesheet" href="app-content/css/app.css">
-	<link rel="stylesheet" href="app-content/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/app-content/css/app.css">
+	<link rel="stylesheet" href="/app-content/css/bootstrap.min.css">
 </head>
 <body style="background: aliceblue;">
 	<div>
@@ -15,9 +15,9 @@
 	</div>
 	</br>
 	<div class="col-sm-6 text-center">
-		<a style="font-size: 25px;" href="login">Login</a>
+		<a style="font-size: 25px;" href="/login">Login</a>
 		</br>
-		<a style="font-size: 25px;" href="register">Register</a>
+		<a style="font-size: 25px;" href="/register">Register</a>
 		</br>
 		<div>
 			<h2>This is simple-angular-mapla</h2>
@@ -27,16 +27,14 @@
 		</div>
 	</div>
 
-	<script src="app-content/lib/jquery-3.1.1.min.js" type="text/javascript" charset="utf-8"></script>
-	<script src="app-content/lib/angular-1.4.3/angular.min.js" type="text/javascript" charset="utf-8"></script>
-	<script src="app-content/lib/angular-1.4.3/angular-route.min.js" type="text/javascript" charset="utf-8"></script>
-	<script src="app-content/lib/angular-1.4.3/angular-cookies.min.js" type="text/javascript" charset="utf-8"></script>
+	<!-- bower:js -->
+	<!-- endbower -->
 
-	<script src="app.js" type="text/javascript" charset="utf-8"></script>
-	<script src="app-components/home/home.controller.js" type="text/javascript" charset="utf-8"></script>
-	<script src="app-components/login/login.controller.js" type="text/javascript" charset="utf-8"></script>
-	<script src="app-components/register/register.controller.js" type="text/javascript" charset="utf-8"></script>
+	<script src="/app.js" type="text/javascript" charset="utf-8"></script>
+	<script src="/app-components/home/home.controller.js" type="text/javascript" charset="utf-8"></script>
+	<script src="/app-components/login/login.controller.js" type="text/javascript" charset="utf-8"></script>
+	<script src="/app-components/register/register.controller.js" type="text/javascript" charset="utf-8"></script>
 
-	<script src="app-services/authentication.service.js" type="text/javascript" charset="utf-8"></script>
+	<script src="/app-services/authentication.service.js" type="text/javascript" charset="utf-8"></script>
 </body>
 </html>
